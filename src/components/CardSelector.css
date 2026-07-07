@@ -1,0 +1,93 @@
+.card-selector {
+  width: 100%;
+}
+
+.search-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #d4af37;
+  border-radius: 8px;
+  color: #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+}
+
+.search-input::placeholder {
+  color: #888;
+}
+
+.loading {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #d4af37;
+  font-weight: bold;
+}
+
+.error-message {
+  background: rgba(255, 0, 0, 0.2);
+  border: 1px solid #ff6b6b;
+  color: #ff6b6b;
+  padding: 12px 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.search-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.search-result-item {
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.search-result-item:hover {
+  background: rgba(212, 175, 55, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+}
+
+.search-result-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.card-info {
+  padding: 0 5px;
+}
+
+.card-name {
+  font-weight: bold;
+  color: #d4af37;
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+}
+
+.card-type {
+  color: #a0a0a0;
+  font-size: 0.85rem;
+}
